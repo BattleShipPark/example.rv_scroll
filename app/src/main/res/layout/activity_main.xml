@@ -9,23 +9,41 @@
               android:paddingTop="@dimen/activity_vertical_margin">
 
     <Button
-        android:id="@+id/test1"
+        android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="scrollToPosition()"
         android:textAllCaps="false"/>
 
     <Button
-        android:id="@+id/test2"
+        android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="test2"/>
+        android:text="scrollToPositionWithOffset()"
+        android:textAllCaps="false"/>
 
     <Button
-        android:id="@+id/test3"
+        android:id="@+id/btn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="test3"/>
+        android:layout_marginLeft="50dp"
+        android:text="reverseLayout"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="stackFromEnd"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="smoothScrollToPosition()"
+        android:textAllCaps="false"/>
 
     <Space
         android:layout_width="match_parent"
