@@ -81,9 +81,9 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn6)
     void onClickBtn6() {
+        layoutManager.scrollToPosition(1);
         items.add(1, items.size());
         adapter.notifyDataSetChanged();
-        layoutManager.scrollToPosition(1);
     }
 
     private static class CustomSmoothScroller extends LinearSmoothScroller {

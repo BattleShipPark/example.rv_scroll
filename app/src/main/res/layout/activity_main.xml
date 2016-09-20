@@ -49,7 +49,7 @@
         android:id="@+id/btn6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="notifyDataSetChanged(), scrollToPosition()"
+        android:text="scrollToPosition(), notifyDataSetChanged()"
         android:textAllCaps="false"/>
 
     <Space
