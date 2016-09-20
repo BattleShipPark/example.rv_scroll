@@ -79,6 +79,13 @@ public class MainActivity extends AppCompatActivity {
         layoutManager.startSmoothScroll(smoothScroller);
     }
 
+    @OnClick(R.id.btn6)
+    void onClickBtn6() {
+        items.add(1, items.size());
+        adapter.notifyDataSetChanged();
+        layoutManager.scrollToPosition(1);
+    }
+
     private static class CustomSmoothScroller extends LinearSmoothScroller {
         private LinearLayoutManager layoutManager;
         private int centerOffset;
@@ -138,17 +145,12 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(MainViewHolder holder, int position) {
-            holder.bind(position);
+            holder.bind(items.get(position));
         }
 
         @Override
         public int getItemCount() {
             return items.size();
-        }
-
-        @Override
-        public long getItemId(int position) {
-            return super.getItemId(position);
         }
 
         public void setItems(List<Integer> items) {

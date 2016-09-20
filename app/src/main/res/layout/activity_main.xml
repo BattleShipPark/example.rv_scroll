@@ -45,6 +45,13 @@
         android:text="smoothScrollToPosition()"
         android:textAllCaps="false"/>
 
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="notifyDataSetChanged(), scrollToPosition()"
+        android:textAllCaps="false"/>
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
